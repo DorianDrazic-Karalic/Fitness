@@ -1,0 +1,33 @@
+.top {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+    -fx-padding: 10;
+}
+.border-color {
+    -fx-border-color: rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 2.0, 0.0, 0.0, 2.0);
+}
+
+.button:hover {
+    -fx-background-color: #45A049;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 2.0, 0.0, 0.0, 2.0);
+}
+
+.remove-button {
+    -fx-background-color: #FF0000;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 2.0, 0.0, 0.0, 2.0);
+}
+
+.remove-button:hover {
+    -fx-background-color: #CC0000;
+   -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 2.0, 0.0, 0.0, 2.0);
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="593.0" prefWidth="300" spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <HBox alignment="CENTER" prefHeight="26.0" prefWidth="279.0" spacing="20.0">
+         <children>
+            <RadioButton fx:id="basicFoodRadioButton" mnemonicParsing="false" text="Basic Food">
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggleGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="recipeRadioButton" mnemonicParsing="false" text="Recipe" />
+         </children>
+      </HBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Basic food:" />
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label prefHeight="18.0" prefWidth="50.0" text="Name:" />
+            <TextField fx:id="nameField" prefHeight="26.0" prefWidth="200.0" />
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label prefWidth="50.0" text="Calories:" />
+            <TextField fx:id="caloriesField" prefHeight="26.0" prefWidth="200.0" />
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label prefHeight="18.0" prefWidth="50.0" text="Fat:" />
+            <TextField fx:id="fatField" prefHeight="26.0" prefWidth="200.0" />
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label prefHeight="18.0" prefWidth="50.0" text="Carbs:" />
+            <TextField fx:id="carbsField" prefHeight="26.0" prefWidth="200.0" />
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label prefWidth="50.0" text="Protein:" />
+            <TextField fx:id="proteinField" prefWidth="200.0" />
+        </HBox>
+
+        <Button fx:id="addFoodWindowButton" alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="278.0" stylesheets="@../resources/values/style.css" text="Add Food" />
+
+        <!-- Recipe Section -->
+        <HBox alignment="BASELINE_RIGHT" spacing="10" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Recipe:" />
+      <HBox alignment="CENTER_LEFT" spacing="10">
+         <children>
+            <Label prefHeight="18.0" prefWidth="50.0" text="Name:" />
+            <TextField fx:id="recipeNameField" prefHeight="26.0" prefWidth="83.0" />
+            <Button fx:id="createRecipeButton" alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="105.0" stylesheets="@../resources/values/style.css" text="Create Recipe" />
+         </children>
+      </HBox>
+        <HBox alignment="BASELINE_RIGHT" spacing="10" />
+        <HBox alignment="BASELINE_RIGHT" spacing="10" />
+      <ListView fx:id="ingredientsListView" prefHeight="102.0" prefWidth="279.0" />
+      <HBox alignment="CENTER" prefHeight="35.0" prefWidth="279.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="50.0" text="Amount:" />
+            <TextField fx:id="amountField" alignment="CENTER" prefHeight="26.0" prefWidth="98.0" />
+            <Button fx:id="addIngridientButton" alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="105.0" stylesheets="@../resources/values/style.css" text="Add Ingredient">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" spacing="10" />
+
+    </children>
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+</VBox>
